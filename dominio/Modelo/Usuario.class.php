@@ -6,9 +6,9 @@
 
 
 class Usuario{
-    private $nombre; // Asociar con objeto del tipo NombreUsuario
+    private $nombre; 
     private $apellido;
-    private $user;
+    private $user; // Asociar con objeto del tipo NombreUsuario
     private $pass;
     private $fnac;
     private $rol; //asociar con un objeto del tipo rol
