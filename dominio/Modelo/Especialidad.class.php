@@ -8,6 +8,7 @@
 
 class Especialidad{
     
+    private $id;      //Obtengo desde la BD
     private $nombre;
     private $titulo; //Objeto del tipo titulo
     
@@ -16,7 +17,14 @@ class Especialidad{
         $this->titulo = $titulo;
     }
 
-    
+    public function getId() {
+        return $this->id;
+    }
+
+    public function setId($id) {
+        $this->id = $id;
+    }
+
     public function getNombre() {
         return $this->nombre;
     }

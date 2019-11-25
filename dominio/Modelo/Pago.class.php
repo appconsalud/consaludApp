@@ -5,6 +5,7 @@
  */
 
 class Pago{
+    private $id;     //la BD entregará esta información
     private $monto;
     private $fecha;
     private $congreso;
@@ -22,6 +23,14 @@ class Pago{
         $this->user = $usuario;
         $this->tipo = $tipoPago;
         
+    }
+    
+    public function getId() {
+        return $this->id;
+    }
+
+    public function setId($id) {
+        $this->id = $id;
     }
     
     public function getMonto() {
