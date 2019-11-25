@@ -11,7 +11,7 @@ class TemasCongreso{
     private $temas; //será un array y se inicializa en el constructor
     
     public function __construct() {
-        $this->temas = new ArrayObject();
+        $this->temas = array();
     }
 
     public function getTemas() {
@@ -22,6 +22,14 @@ class TemasCongreso{
         $this->temas = $temas;
     }
 
+    public function addTema($tema){
+        try{
+            array_push($this->temas, $tema);
+        }
+        catch (Exception $e){
+            echo "Error al intentar ingresar un tema: ".$e->getMessage();
+        }
+    }
 
 }
 
